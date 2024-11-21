@@ -1,0 +1,12 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+.maincon{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top:100px;
+}
