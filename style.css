@@ -4,9 +4,111 @@
     margin: 0px;
 }
 .maincon{
-    
+    background-color: black;
+    height: 100px;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    margin-top:100px;
+    justify-content: end;
+    align-items: center;
+}
+#line{
+width: 42px;
+height: 5px;
+background-color: white;
+margin-top: 5px;
+user-select: none;
+margin-right: 25px;
+position: absolute;
+transition: 0.2s;
+}
+.second{
+    position: absolute;
+}
+input{
+    display: none;
+}
+label{
+    z-index: 2;
+    margin-right: 25px;
+    position: absolute;
+    cursor: pointer;
+    margin-bottom: -4;
+    width: 42px;
+    height: 40px;
+}
+#hat{
+    margin-top: 350px;
+    width: 0px;
+    height: 250px;
+    position: absolute;
+    transition: 0.3s;
+    background-color: black;
+    font-size: 0px;
+    text-align: center;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+
+}
+a{
+    
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 20%;
+    border: none;
+    flex-direction: column;
+    margin-top: 10px;
+    transition: none;
+    user-select: none;
+}
+.first{
+    margin-bottom:20px;
+}
+.fourth{
+    margin-bottom: -20px;
+}
+
+#burger:checked ~ nav{
+    padding: 10px;
+    padding-left: 20px;
+    border: 1px solid black;
+    border-top: none;
+    width: 100%;
+   
+    font-size: 16px;
+}
+#burger:checked ~ .first{
+    display: none;
+
+}
+#burger:checked ~ .fourth{
+    display: none;
+}
+#burger:checked ~ .second{
+    transform: rotate(45deg);
+}
+#burger:checked ~ .third{
+    transform: rotate(-45deg);
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid gray;
+    border-radius: 10px;
+    width:100%;
+    
+}
+a:hover{
+    color: white;
+    box-shadow: 0px 0px 12px rgba(209, 209, 209, 0.728);
+}
+a:active{
+    color:rgb(201, 201, 201) ;
+}
+a:visited{
+    box-shadow: 0px 0px 12px rgba(209, 209, 209, 0.728);
 }
