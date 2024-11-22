@@ -3,9 +3,8 @@
     padding: 0px;
     margin: 0px;
 }
-body{
+#mainbody{
     background-image: url(photo_2024-11-21_18-43-53.jpg);
-   
 }
 .maincon{
     background-color: black;
@@ -44,9 +43,9 @@ label{
     height: 40px;
 }
 #hat{
-    margin-top: 350px;
+    margin-top: 400px;
     width: 0px;
-    height: 250px;
+    height: 300px;
     position: absolute;
     transition: 0.3s;
     background-color: black;
@@ -55,19 +54,56 @@ label{
     display: flex;
     flex-direction:column;
     align-items: center;
+    z-index: 1;
 
 }
+
 a{
+    display: none;
     color: white;
     text-decoration: none;
     font-weight: 500;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border-radius: 20%;
-    border: none;
+    border-radius: 10px;
+    border: 1px solid gray;
+    width: 100%;
     flex-direction: column;
     margin-top: 10px;
-    transition: none;
     user-select: none;
+    transition: 0.00001s;
+   
+}
+#site{
+    display: none;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    box-shadow: none;
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    flex-direction: column;
+    margin-top: 20px;
+    user-select: none;
+    
+}
+#site::after{
+    content: "";
+    position: absolute;
+    border: 3px solid white;
+    width: 10px;
+    height: 10px;
+    padding: 2px;
+    transform: rotate(50deg) translateX(15px);
+   border-bottom: none;
+   border-left: none;
+    transition: 0.4s;
+}
+#site:hover::after{
+    color: rgb(214, 214, 214);
+    text-decoration: solid;
+    transform: translateX(16px) translateY(11px) rotate(50deg)
 }
 .first{
     margin-bottom:20px;
@@ -82,9 +118,9 @@ a{
     border: 1px solid black;
     border-top: none;
     width: 100%;
-   
     font-size: 16px;
 }
+
 #burger:checked ~ .first{
     display: none;
 
@@ -98,14 +134,6 @@ a{
 #burger:checked ~ .third{
     transform: rotate(-45deg);
 }
-
-a{
-    text-decoration: none;
-    color: white;
-    border: 1px solid gray;
-    border-radius: 10px;
-    width:100%;
-}
 a:hover{
     color: white;
     box-shadow: 0px 0px 12px rgba(209, 209, 209, 0.728);
@@ -118,11 +146,40 @@ a:active{
 a:visited{
     box-shadow: 0px 0px 12px rgba(209, 209, 209, 0.728);
 }
-.maintext{
-    color: white;
-    font-size: 16px;
+
+#site:active{
+    color: rgba(209, 209, 209, 0.728);
+    background-color:black;
+}
+.typing-container {
     margin-top: 130px;
     margin-left:10px ;
-    font-weight: 200;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+   z-index: 0;
+   width: 100%;
+  }
+  
+  #cursor {
+    display: inline-block;
+    animation: blink 0.7s steps(1) infinite;
+    z-index: 0;
+  }
+  
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  #textsumanhun{
+    color: white;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  .image{
+    width: 100%;
+    text-align: center;
+  }
