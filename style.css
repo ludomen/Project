@@ -3,21 +3,27 @@
     padding: 0px;
     margin: 0px;
 }
+body{
+    background-image: url(photo_2024-11-21_18-43-53.jpg);
+   
+}
 .maincon{
     background-color: black;
-    height: 100px;
+    height:100px;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: end;
     align-items: center;
+    box-shadow: 0px 60px 48px rgba(0, 0, 0, 0.834);
 }
+
 #line{
 width: 42px;
 height: 5px;
 background-color: white;
-margin-top: 5px;
 user-select: none;
+margin-top: -3px;
 margin-right: 25px;
 position: absolute;
 transition: 0.2s;
@@ -52,7 +58,6 @@ label{
 
 }
 a{
-    
     color: white;
     text-decoration: none;
     font-weight: 500;
@@ -100,15 +105,24 @@ a{
     border: 1px solid gray;
     border-radius: 10px;
     width:100%;
-    
 }
 a:hover{
     color: white;
     box-shadow: 0px 0px 12px rgba(209, 209, 209, 0.728);
+
 }
 a:active{
     color:rgb(201, 201, 201) ;
+    background-color: rgba(111, 111, 111, 0.236);
 }
 a:visited{
     box-shadow: 0px 0px 12px rgba(209, 209, 209, 0.728);
+}
+.maintext{
+    color: white;
+    font-size: 16px;
+    margin-top: 130px;
+    margin-left:10px ;
+    font-weight: 200;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
