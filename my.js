@@ -1,7 +1,7 @@
 const text = "Сайт для настоящих пацанов";
-const typingSpeed = 100; // Скорость печатания (мс)
-const deletingSpeed = 50; // Скорость удаления (мс)
-const delayBetween = 2000; // Задержка между печатанием и удалением (мс)
+const typingSpeed = 100;
+const deletingSpeed = 50; 
+const delayBetween = 2000; 
 
 let index = 0;
 let isDeleting = false;
@@ -30,7 +30,7 @@ function type() {
 
 
 const newText = "";
-const newTypingSpeed = 100; // Скорость печатания (мс)
+const newTypingSpeed = 100; 
 
 let newIndex = 0;
 
