@@ -1,4 +1,4 @@
-const text = "Сайт для настоящих пацанов";
+const text = "Cайт для выпускников ";
 const typingSpeed = 100;
 const deletingSpeed = 50; 
 const delayBetween = 2000; 
